@@ -1,8 +1,24 @@
-# update_status.py
+Java Login App
+Testing
 
-from datetime import datetime
+Sample Java Login application uses "UserDB" database and Table schema to store the Employee Login details.
+How to see list of Databases
+SHOW DATABASES;
 
-README_PATH = "README.md"
+How to create Database
+CREATE DATABASE UserDB;
 
-with open(README_PATH, "a") as f:
-    f.write(f"\n\n_Last updated on {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')} UTC_")
+How to list Tables
+USE UserDB;
+
+SHOW TABLES;
+
+How to create Table
+Below Query to create require TABLE schema to store Employee records
+CREATE TABLE Employee ( id int unsigned auto_increment not null, first_name varchar(250), last_name varchar(250), email varchar(250), username varchar(250), password varchar(250), regdate timestamp, primary key (id) );
+
+List Table data
+SELECT * FROM Employee;
+
+Describe Table schema
+DESCRIBE Employee;
