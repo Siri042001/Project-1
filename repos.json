@@ -1,0 +1,7 @@
+# Move repos.json to the same folder as update_status.py
+mv repos.json update_status.py's-folder/
+
+# Then add, commit, and push it to GitHub
+git add repos.json
+git commit -m "Add repos.json"
+git push origin main  # or your branch name
